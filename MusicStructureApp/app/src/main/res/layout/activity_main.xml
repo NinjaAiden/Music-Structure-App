@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_background"
+    tools:context="com.example.android.musicstructureapp.MainActivity">
+
+    <TextView
+        android:id="@+id/songs"
+        style="@style/MainStyle"
+        android:contentDescription="@string/library_category"
+        android:text="@string/library_category" />
+
+    <TextView
+        style="@style/play_time"
+        android:text="@string/play_time" />
+
+    <SeekBar
+        android:id="@+id/seek_view"
+        style="@style/seekbar"
+        android:layout_above="@id/playViewGroup" />
+
+    <LinearLayout
+        android:padding="@dimen/padding"
+        android:id="@+id/playViewGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/prevBtn"
+            style="@style/ButtonStyle"
+            android:contentDescription="@string/previous_skip"
+            android:src="@drawable/prevbtn" />
+
+        <ImageButton
+            android:id="@+id/playBtn"
+            style="@style/ButtonStyle"
+            android:contentDescription="@string/play"
+            android:src="@drawable/playbtn" />
+
+        <ImageButton
+            android:id="@+id/nextBtn"
+            style="@style/ButtonStyle"
+            android:contentDescription="@string/next_skip"
+            android:src="@drawable/nextbtn" />
+    </LinearLayout>
+
+</RelativeLayout>

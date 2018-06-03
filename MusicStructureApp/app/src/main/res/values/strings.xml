@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Music Structure App</string>
+    <string name="library_category">Library</string>
+    <string name="artist_category">Artists</string>
+    <string name="playing_category">Now Playing</string>
+    <string name="song_label">Songs</string>
+    <string name="play_time">00:00</string>
+    <string name="previous_skip">Skip to previous song</string>
+    <string name="play">Play current song</string>
+    <string name="next_skip">Skip to next song</string>
+</resources>
